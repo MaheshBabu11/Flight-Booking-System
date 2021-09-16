@@ -30,7 +30,7 @@ public class SwaggerConfig {
                 .description("\"Swagger Configuration for Application\"")
                 .version("1.2.0")
                 .license("Apache License")
-                .contact(new Contact("raza", "cg.com",  "raza.ahmad.khan786@gmail.com"))
+                .contact(new Contact("", "",  ""))
                 .build();
     }
 
