@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fd5379cf-5f9b-40ac-9c59-f2afa3a22fba">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<field name="ticketNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[ticketNumber]]></fieldDescription>
+	</field>
+	<field name="pnrNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pnrNumber]]></fieldDescription>
+	</field>
+	<field name="flightNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[flightNumber]]></fieldDescription>
+	</field>
+	<field name="airline" class="java.lang.String">
+		<fieldDescription><![CDATA[airline]]></fieldDescription>
+	</field>
+	<field name="fromCityName" class="java.lang.String">
+		<fieldDescription><![CDATA[fromCityName]]></fieldDescription>
+	</field>
+	<field name="toCityName" class="java.lang.String">
+		<fieldDescription><![CDATA[toCityName]]></fieldDescription>
+	</field>
+	<field name="roasterDate" class="java.lang.String">
+		<fieldDescription><![CDATA[roasterDate]]></fieldDescription>
+	</field>
+	<field name="depurture" class="java.lang.String">
+		<fieldDescription><![CDATA[depurture]]></fieldDescription>
+	</field>
+	<field name="arrival" class="java.lang.String">
+		<fieldDescription><![CDATA[arrival]]></fieldDescription>
+	</field>
+	<field name="bookingActive" class="java.lang.String">
+		<fieldDescription><![CDATA[bookingActive]]></fieldDescription>
+	</field>
+	<field name="bookingConfirmed" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bookingConfirmed]]></fieldDescription>
+	</field>
+	<field name="passengerName" class="java.lang.String">
+		<fieldDescription><![CDATA[passengerName]]></fieldDescription>
+	</field>
+	<field name="ticketPrice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[ticketPrice]]></fieldDescription>
+	</field>
+	<field name="passengerAge" class="java.lang.Integer">
+		<fieldDescription><![CDATA[passengerAge]]></fieldDescription>
+	</field>
+	<field name="passengerContact" class="java.lang.String">
+		<fieldDescription><![CDATA[passengerContact]]></fieldDescription>
+	</field>
+	<field name="passengerIdentityType" class="java.lang.String">
+		<fieldDescription><![CDATA[passengerIdentityType]]></fieldDescription>
+	</field>
+	<field name="seatType" class="java.lang.String">
+		<fieldDescription><![CDATA[seatType]]></fieldDescription>
+	</field>
+	<field name="roasterStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[roasterStatus]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="19" y="5" width="101" height="31" uuid="e875bafe-adcd-4589-a692-9d93f30a5e46"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket Details]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="50" width="595" height="1" uuid="5c0e224f-f18d-4aa3-832a-c0acdb2c5c96">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="277" splitType="Stretch">
+			<frame>
+				<reportElement x="18" y="15" width="535" height="251" uuid="41f1dcf2-997b-4b3b-8ed3-1c5648926ef9"/>
+				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="126" y="160" width="129" height="13" uuid="7c172ea2-ca1c-4fb1-bc26-403996dbc996"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{arrival}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="34" y="125" width="64" height="13" uuid="e9b6f497-754f-4559-ba0f-6960c64d5cf2"/>
+					<text><![CDATA[Date :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="35" y="213" width="64" height="13" uuid="3390abd9-99e8-461f-86b6-b96f8b53acf8"/>
+					<text><![CDATA[Ticket Price :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="360" y="71" width="170" height="13" uuid="9e9c8300-d626-4a93-9e3e-8af2ebae7410"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{seatType}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="35" y="177" width="64" height="13" uuid="4327a5c6-56dd-4552-98bc-e17aae839314"/>
+					<text><![CDATA[Flight Status :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="126" y="143" width="129" height="13" uuid="501acb85-eb55-4410-a1a3-543ae07fe536"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{depurture}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="34" y="107" width="64" height="13" uuid="b397b6cd-c56c-482b-8626-d6024bd4ed24"/>
+					<text><![CDATA[To :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="360" y="53" width="170" height="13" uuid="7411aaca-fe7c-443b-b3e4-78f1fe2bde44"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{passengerIdentityType}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="126" y="215" width="129" height="13" uuid="58e59494-831e-4991-8f41-2b72117a248a"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{ticketPrice}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="271" y="36" width="64" height="13" uuid="474546d5-a03c-4f19-a807-32b1123b1171"/>
+					<text><![CDATA[Age :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="360" y="18" width="170" height="13" uuid="b30d16d1-55c2-43d8-a53e-7fd310640a52"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{passengerName}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="125" y="54" width="129" height="13" uuid="a795d6e2-afd0-417a-8b63-04d1df4e0f25"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{flightNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="34" y="142" width="64" height="13" uuid="176719f4-ac16-4aef-9ba5-9d0db51ce190"/>
+					<text><![CDATA[Depurture :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="34" y="160" width="64" height="13" uuid="d16e9235-7420-4d80-a0a3-9fc7102e9df6"/>
+					<text><![CDATA[Arrival :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="272" y="71" width="64" height="13" uuid="130f2fd7-4944-4725-9bce-4699674edbbe"/>
+					<text><![CDATA[Seat Type :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="271" y="18" width="64" height="13" uuid="3d0b41bf-77a3-46f1-9b73-e761e08aa911"/>
+					<text><![CDATA[Name :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="126" y="197" width="129" height="13" uuid="3c0fe285-09a9-494b-8520-8dfcdeab6cfe"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[($F{bookingConfirmed}.equals(Boolean.TRUE)) ? "Confirmed" : "NOT Confirmed"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="34" y="89" width="64" height="13" uuid="2f47a8b3-1129-4294-91a1-6d81a4153ea9"/>
+					<text><![CDATA[From :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="125" y="107" width="129" height="13" uuid="23daa1b4-8862-4cf9-9dbd-ff1ad214b7ef"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{toCityName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="34" y="71" width="64" height="13" uuid="27b73bee-59c5-446f-b4c3-81a5e43f5291"/>
+					<text><![CDATA[Airline :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="124" y="18" width="130" height="13" uuid="1401c314-2317-48d4-9121-2f927e82070d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{ticketNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="33" y="18" width="64" height="13" uuid="2b1af565-9c22-4445-8368-584d1c014c86"/>
+					<text><![CDATA[Ticket :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="124" y="90" width="130" height="13" uuid="8be8a2f7-c1ac-412f-bd48-e58da50cf860"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{fromCityName}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="124" y="35" width="130" height="13" uuid="a4877d98-69da-4bd3-8a1f-9a82041c17d9"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{pnrNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="35" y="196" width="64" height="13" uuid="d926f140-a9b6-46f8-97fc-4aabab057105"/>
+					<text><![CDATA[Ticket Status :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="271" y="54" width="64" height="13" uuid="8e795d86-873a-4158-a3cd-8dcef3701f61"/>
+					<text><![CDATA[Identity Type :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="125" y="125" width="129" height="13" uuid="866adf36-a2cc-43ae-a682-61804cd1369d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{roasterDate}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="360" y="36" width="170" height="13" uuid="51d1588a-3a4c-4939-8255-80c9405e9762"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{passengerAge}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="125" y="72" width="129" height="13" uuid="213a4402-4d82-40f0-a716-f539a0bb6940"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{airline}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="33" y="54" width="64" height="13" uuid="e262e7e4-81ca-4f82-9076-c454640cdc6e"/>
+					<text><![CDATA[Flght :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="126" y="178" width="129" height="13" uuid="bac2928c-06a8-4d57-8c82-e14745ddad39"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{roasterStatus}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="33" y="36" width="64" height="13" uuid="65ccd27c-95d0-4268-ab5e-68b847b3bcf9"/>
+					<text><![CDATA[PNR :]]></text>
+				</staticText>
+				<line>
+					<reportElement x="18" y="32" width="237" height="1" uuid="aada2e68-9c97-44a4-baf8-badc994394ba"/>
+				</line>
+				<line>
+					<reportElement x="19" y="51" width="237" height="1" uuid="58e32d50-8389-4f51-a467-3aaab3670aee"/>
+				</line>
+				<line>
+					<reportElement x="19" y="69" width="237" height="1" uuid="bd56873c-57a3-4756-b042-343fd5a9a32e"/>
+				</line>
+				<line>
+					<reportElement x="19" y="86" width="237" height="1" uuid="b0a94843-db28-4fa4-ba7d-bf31dad413b7"/>
+				</line>
+				<line>
+					<reportElement x="19" y="104" width="237" height="1" uuid="03712a14-18dc-4deb-95a9-d188682fff36"/>
+				</line>
+				<line>
+					<reportElement x="20" y="123" width="237" height="1" uuid="9587a942-6e13-4daf-b1ec-a410c173237a"/>
+				</line>
+				<line>
+					<reportElement x="20" y="141" width="237" height="1" uuid="2ecd0763-64d9-4b32-854d-a75dcf0ba226"/>
+				</line>
+				<line>
+					<reportElement x="20" y="158" width="237" height="1" uuid="fc13d8fb-f752-4d5f-acc6-5dd72bb52c4e"/>
+				</line>
+				<line>
+					<reportElement x="20" y="175" width="237" height="1" uuid="b8e9e55f-c10b-49ca-9911-8f686db7bf40"/>
+				</line>
+				<line>
+					<reportElement x="21" y="194" width="237" height="1" uuid="ac8ee443-680c-487a-b808-586413c248b3"/>
+				</line>
+				<line>
+					<reportElement x="21" y="212" width="237" height="1" uuid="3f86671e-7cfc-4cb6-a9ea-543d1a28a207"/>
+				</line>
+				<line>
+					<reportElement x="21" y="229" width="237" height="1" uuid="6f33ead1-ae7a-45c1-ae13-9d114106c630"/>
+				</line>
+				<line>
+					<reportElement x="270" y="33" width="237" height="1" uuid="4a40d0cf-623c-4142-9044-0104cdc0c31e"/>
+				</line>
+				<line>
+					<reportElement x="270" y="51" width="237" height="1" uuid="1b305d04-5773-45a4-803a-197ca771e5a6"/>
+				</line>
+				<line>
+					<reportElement x="270" y="68" width="237" height="1" uuid="7d18bcb6-32cc-4afc-8be3-e014d5df8a2a"/>
+				</line>
+				<line>
+					<reportElement x="270" y="86" width="237" height="1" uuid="ab0e4306-aa66-4dc8-ad69-714ce42f7733"/>
+				</line>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="583" y="6" width="100" height="30" uuid="d6511e51-96ee-45da-9465-914bfe66253d"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
